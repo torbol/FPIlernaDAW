@@ -14,5 +14,5 @@
 
 ## Resultado ejercicio:
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/c45e8b7b-1c8b-42fd-ac8f-c3aefe1b3775">
+  <img src="https://github.com/user-attachments/assets/03421ba2-e71f-4bde-a45c-9c6310a9f08c">
 </p>
