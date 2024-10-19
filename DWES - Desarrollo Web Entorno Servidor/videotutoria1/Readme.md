@@ -13,4 +13,6 @@
 > ¿Cómo sabré si mi código funciona? Muy sencillo, si cambias el valor de las variables y al refrescar la página, se muestran los nuevos valores, tu código funciona perfectamente. ¡Enhorabuena!
 
 ## Resultado ejercicio:
-
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/c45e8b7b-1c8b-42fd-ac8f-c3aefe1b3775">
+</p>
