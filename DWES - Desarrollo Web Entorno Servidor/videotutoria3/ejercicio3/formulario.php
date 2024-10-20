@@ -16,7 +16,7 @@
         <div class="div1">
             <h1>¿Qué desea tomar?</h1>
             <div class="div2">
-                <form method="GET" action="comanda.php" id="formulario">
+                <form method="POST" action="comanda.php" id="formulario">
                     <div class = "primerplato">
                         <h2>Primer plato</h2>
                         <label for = "plato1"></label>
