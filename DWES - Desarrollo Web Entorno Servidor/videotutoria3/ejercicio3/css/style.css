@@ -1,0 +1,35 @@
+/*CSS para clientes formulario.php*/
+.div1 {
+    text-align: center;
+}
+.div2 { /*Centramos los div que están dentro de div2 con un 80% de ancho y un margen izdo del 10% por lo que a la derecha tendrá otro margen del 10%*/
+    margin-left: 10%;
+    width: 80%;
+    border: 3px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #82e0aa;
+}
+.div2 select {
+    width: 10em;
+    height: 4em;
+    margin-bottom: 2em;
+}
+.botones {
+    margin-top: 2em;
+}
+.botones button {
+    width: 15em;
+    height: 5em;
+}
+
+
+/*CSS para comanda.php*/
+.tabla, .tabla th, .tabla td {
+    text-align: center;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+.tabla {
+    width: 100%;
+}
