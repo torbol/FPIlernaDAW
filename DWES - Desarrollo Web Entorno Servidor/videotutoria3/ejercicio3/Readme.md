@@ -1,6 +1,6 @@
 # Ejercicio 3: Propuesta
 
-Crea un fichero formulario.php que contenga los campos para una aplicación web de pedidos a un restaurante. Los campos deben ser seleccionables y deben incluir:
+Crea un fichero *formulario.php* que contenga los campos para una aplicación web de pedidos a un restaurante. Los campos deben ser seleccionables y deben incluir:
 * Un desplegable para el primer plato del menú con tres o cuatro opciones a tu gusto
 * Un desplegable para el segundo plato del menú con tres o cuatro opciones a tu gusto
 * Un desplegable para seleccionar la bebida con tres o cuatro opciones a tu gusto
