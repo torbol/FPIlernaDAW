@@ -1,9 +1,9 @@
 # Ejemplo 3: Ejercicio propuesto
 
-Nos dan el siguiente html:
+### Nos dan el siguiente html:
 
 <p align="center">
-  <img src="" width=600>
+  <img src="https://github.com/user-attachments/assets/1c1662b4-b1fc-43a2-89c4-66a625523ffc" width=600>
 </p>
 
 ### ¿Qué queremos conseguir?
@@ -23,5 +23,5 @@ Nos dan el siguiente html:
 
 ## Resultado ejercicio:
 <p align="center">
-  <img src="" width=600>
+  <img src="https://github.com/user-attachments/assets/d9809433-d1a7-424a-a375-3b3bcbd53730" width=600>
 </p>
