@@ -3,7 +3,7 @@
 ### Nos dan el siguiente html:
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/1c1662b4-b1fc-43a2-89c4-66a625523ffc" width=600>
+  <img src="https://github.com/user-attachments/assets/a7edf681-0e96-440a-a087-14ab1127965b" width=600>
 </p>
 
 ### ¿Qué queremos conseguir?
