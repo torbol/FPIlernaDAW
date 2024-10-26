@@ -17,5 +17,5 @@ Puedes probar con la fecha del ejemplo para verificar que funciona
 
 ## Resultado ejercicio:
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/c0797877-ac82-4322-b216-5fcc9e486e65">
+  <img src="https://github.com/user-attachments/assets/0ae09d1f-12f6-47e3-b5b2-8012e8f8e39f">
 </p>
