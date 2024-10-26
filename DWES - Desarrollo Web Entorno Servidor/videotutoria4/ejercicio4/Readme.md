@@ -7,7 +7,7 @@ Crea un fichero *formulariocumple.php* que sirva para transformar una fecha conc
 * Tres campos para la hora, minutos y segundos
 * Un botón "Convertir" que envíe el formulario
 
-El fichero que reciba los datos del formulario debe transformarlo a tiempo UNIX y darle formato para que se muestre la siguiente frase (completamente en español): "El <día_semana> <día> de <mes> de <año> a las <hora>:<minutos>:<segundos> tiene el valor UNIX de <valor_unix>"
+El fichero que reciba los datos del formulario debe transformarlo a tiempo UNIX y darle formato para que se muestre la siguiente frase (completamente en español): *"El \<día_semana\> \<día\> de \<mes\> de \<año\> a las \<hora\>:\<minutos\>:\<segundos\> tiene el valor UNIX de <valor_unix>"*
 
 Ejemplo de frase: El jueves 29 de febrero de 2024 a las 11:30:00 tiene un valor UNIX de 1709202600
 
