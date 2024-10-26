@@ -34,7 +34,7 @@
                 <label for="seconds">Segundos: </label>
                 <input type="number" name="seconds" min="0" max="59" step="1"><br>
                 <!--Botón convertir que envíe to\do el formulario-->
-                <input type="submit" value="Enviar">
+                <input type="submit" value="Convertir">
             </fieldset>
         </form>
     </body>
