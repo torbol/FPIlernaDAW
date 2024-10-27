@@ -12,5 +12,5 @@ En cada visita a la página se mostrará la frase *"El valor del contador de vis
 
 ## Resultado ejercicio:
 <p align="center">
-  <img src="">
+  <img src="https://github.com/user-attachments/assets/9483d0d5-b78c-4f5f-831c-774d6a588e99" width="720">
 </p>
