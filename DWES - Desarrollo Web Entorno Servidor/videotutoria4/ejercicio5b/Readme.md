@@ -7,13 +7,10 @@ Realiza el mismo ejercicio que la propuesta 5A, pero con una cookie que tenga un
 
 En cada visita a la página se mostrará la frase *"El valor del contador de visitas es de \<valorContador\>"*
 
-¿Cómo sabré si mi código funciona? Si el contador cuenta del 1 al 10 y vuelve a empezar, INCLUSO SI SE CIERRA MI NAVEGADOR, mi código será correcto
-
-
 > [!TIP]
 > ¿Cómo sabré si mi código funciona? Si el contador cuenta del 1 al 10 y vuelve a empezar, INCLUSO SI SE CIERRA MI NAVEGADOR, mi código será correcto
 
 ## Resultado ejercicio:
 <p align="center">
-  <img src="">
+  <img src="https://github.com/user-attachments/assets/e8340ad3-de27-447f-8cb0-bd440faa3f9b">
 </p>
