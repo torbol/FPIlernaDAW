@@ -1,7 +1,8 @@
 <?php
     $counterKey = 'valorContador'; //Nombre clave para el contador
     $expirationKey = 'expirationTime'; //Nombre clave para fecha de expiración
-    $expirationValue = time() + 20; //Valor tiempo caducidad de ambas cookies
+    $tiempoDias = 30; //Ciclo de vida cookies en días
+    $expirationValue = time() + ($tiempoDias*24*60*60); //Valor tiempo caducidad de ambas cookies en segundos
     $nmin = 1; //Contamos del 1 al 10
     $nmax = 10;
 
@@ -19,8 +20,8 @@
 
     //Comprobamos si ya están establecidas las cookies, en caso contrario las creamos
     if (!isset($_COOKIE[$expirationKey]) || !isset($_COOKIE[$counterKey])) {
-        setcookie($expirationKey, $expirationValue, $expirationValue); //Tiempo de expiración de la cookie en segundos, para que siempre sea mismo valor
-        setcookie($counterKey, $nmin, $expirationValue); //Establecemos contador a el tiempo expiración guardado en cookie anterior
+        setcookie($expirationKey, $expirationValue, $expirationValue); //Guardamos tiempo de expiración de las cookies en segundos en una cookie, para que siempre sea mismo valor
+        setcookie($counterKey, $nmin, $expirationValue); //Establecemos contador al mismo tiempo de expiración
         $updatedValue = $nmin;
     } else {
         $updatedValue = controlValorContador($_COOKIE[$counterKey], $nmin, $nmax); //Guardamos valor incrementado/reiniciado
