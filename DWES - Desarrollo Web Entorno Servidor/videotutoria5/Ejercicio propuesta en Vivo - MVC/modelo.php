@@ -18,6 +18,6 @@ function setTarea($nuevaTarea) {
     $posicion = count($tareasAntiguas); //Obtenemos el length de nuestro array, recordemos que cuenta el número de elementos, de forma que el índice 0 es 1 elemento, el 1 es 2 elementos... de forma que nos da siempre el índice+1
     $tareasAntiguas[$posicion] = $nuevaTarea; //Añadimos al array nuestra nueva tarea
     //Guardamos en la cookie
-    setcookie("tareas", serialize($tareasAntiguas)); //Volvemos a serializar, ya que en la cookie solo se pueden guardar Strings. Para ver ejemplos mirar este video https://www.youtube.com/watch?v=hTm4FyFDh40&t=86s&ab_channel=GaryClarke
+    setcookie("tareas", serialize($tareasAntiguas), $GLOBALS["tiempoExp"]); //Volvemos a serializar, ya que en la cookie solo se pueden guardar Strings. Para ver ejemplos mirar este video https://www.youtube.com/watch?v=hTm4FyFDh40&t=86s&ab_channel=GaryClarke
     return $tareasAntiguas;
 }
