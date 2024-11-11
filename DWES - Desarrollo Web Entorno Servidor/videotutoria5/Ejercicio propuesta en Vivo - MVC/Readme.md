@@ -8,7 +8,7 @@ Crea un formulario de Listas de Tareas con un campo de texto para añadir una nu
 ## Explicación de cómo lo he planteado
 Lo he realizado planteandolo como un modelo de 3 capas en el que según el patrón MVC:
 * La vista será la interfaz gráfica.
-* El controlador se encargará de hacer de intermediario ("traductor inputs/outputs) entre la vista y el modelo.
+* El controlador se encargará de hacer de intermediario ("traductor" inputs/outputs) entre la vista y el modelo.
 * El modelo se encargará de la lógica de negocio y del acceso a datos.
 
 El ejercicio ha seguido este diagrama:
