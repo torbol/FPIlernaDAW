@@ -33,7 +33,6 @@ const listaDeTareas = [ //Con const indicamos que nuestro array no va a ser reas
   eliminar y marcar como completada la tarea.*/
 
 function mostrarTareas(estado) { //Usaremos el parámetro estado para el paso 8 y 9. Puede ser true si está completado o false si no lo está
-  console.log(estado);
   let elementoTareas = document.getElementById("tareas-lista"); //Seleccionamos el elemento <ul id="tareas-lista"></ul> de lista.html
   elementoTareas.style.overflow = "auto"; //Añadimos posibilidad de hacer scroll en la lista si esta es muy larga. Funcionalidad extra no necesaria para cumplir requisitos ejercicio.
   elementoTareas.innerHTML = ""; //Limpiamos la lista <ul></ul> para que no se dupliquen elementos cada vez que insertemos a esta función
@@ -48,9 +47,9 @@ function mostrarTareas(estado) { //Usaremos el parámetro estado para el paso 8 
     let estiloColorElementoTareas = ""; //Aquí guardaremos el color del elemento según los días restantes
     if (diasRestantes <= 7 && diasRestantes > 3) //Menor o igual a 7 días y mayor a 3
       estiloColorElementoTareas = "style=\"background: yellow;\"";
-    else if (diasRestantes <= 3 && diasRestantes >= 0) //Menor o igual a 3 días y mayor o igual a 0
+    else if (diasRestantes <= 3 && diasRestantes > 0) //Menor o igual a 3 días y mayor a 0
       estiloColorElementoTareas = "style=\"background: orange;\"";
-    else if (diasRestantes < 0) //Menor a 0 (fecha pasada)
+    else if (diasRestantes <= 0) //Menor a 0 o mismo día (fecha pasada)
       estiloColorElementoTareas = "style=\"background: red;\"";
 
     //Creamos la lista
@@ -82,14 +81,13 @@ function agregarTarea() {
   let fechaExpiracionNueva = document.getElementById("fecha-tarea").value; //Obtenemos fecha introducida (paso 7)
   let ultimoIndiceArray = listaDeTareas.length; //La longitud de nuestro array listaDeTareas será el nuevo índice que añadiremos con una nueva tarea
   let ultimoIdTarea;
-  console.log(ultimoIndiceArray);
   if (ultimoIndiceArray === 0) {
     ultimoIdTarea = 1; //Si listaDeTareas está vacío (porque hemos eliminado todas), establecemos el id de tarea en 1
   }
   else { //en caso contrario, lo establecemos en id ultima tarea + 1
     ultimoIdTarea = listaDeTareas[ultimoIndiceArray-1].id + 1; //Será el id de nuestra nueva instancia. Para ello tomamos el último elemento de listaDeTareas y sumamos 1 al último id, esto se lo pasamos como atrinbuto a la nueva instancia (nueva tarea)
   }
-  let comprobarContenido = (/[a-zA-Z0-9]/).test(descripcionNueva); //Utilizamos una expresión regular sencilla para comprobar que el campo de texto contenga letras a-z minúsculas, A-Z mayúsculas o números 0-9, con la función pattern.test(str) devolvemos true si las contiene o false si no (por ejemplo si está vacío o solo tiene espacios/otros caracteres no comprendidos devolvería false)
+  let comprobarContenido = (/[a-zA-Z0-9]/).test(descripcionNueva); //Utilizamos una expresión regular sencilla para comprobar que el campo de texto contenga al menos una letra de la a-z minúsculas, A-Z mayúsculas o ún número del 0-9, con la función pattern.test(str) devolvemos true si las contiene o false si no (por ejemplo si está vacío o solo tiene espacios/otros caracteres no comprendidos devolvería false)
   if (comprobarContenido && fechaExpiracionNueva) { //Comprobamos si el campo Nueva Tarea está vacío o no contiene una tarea válida, en caso contrario, añadimos la nueva tarea.
     //Comprobamos si el contenido de la descripción de la nueva tarea tiene algún < o > ya que estos caracteres rompen el resto del html. Para ello, volvemos a usar una regex
     const caracteresProblematicos = { //Es un objeto clave valor (como los diccionarios en Python). https://www.w3schools.com/js/js_objects.asp
@@ -105,8 +103,8 @@ function agregarTarea() {
       arrayClaves.forEach((caracter) => {
         expresion += caracter;
       });
-      expresion	= "[" + expresion + "]"; //Añadimos al final /g para que si encuentra una coincidencia, no se detenga en la primera coincidencia, sino que siga hasta el final
-      return new RegExp(expresion, "g");
+      expresion	= "[" + expresion + "]";
+      return new RegExp(expresion, "g");  //Añadimos al final /g para que si encuentra una coincidencia, no se detenga en la primera coincidencia, sino que siga hasta el final
     };
     descripcionNueva = descripcionNueva.replace(regex(), (caracterEncontrado) => {return caracteresProblematicos[caracterEncontrado];}); //Reemplazamos los caracteres problemáticos con cadena.replace(expresión regular, "reemplazo"). Más info sobre Objetc.keys(objetoClaveValor) https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys
     listaDeTareas.splice(ultimoIndiceArray, 0, new Tarea(ultimoIdTarea, descripcionNueva, new Date(fechaExpiracionNueva)));
@@ -114,11 +112,6 @@ function agregarTarea() {
   }
   else
     alert("El campo Nueva Tarea debe contener al menos una letra o un número y una fecha válida");
-  /*Nota: Descomentar esto si queremos ver contenido de nuestro array actualizado con la nueva tarea
-  listaDeTareas.forEach((item, i) => {
-    console.log(JSON.stringify(item) + " índice " + i);
-  });
-  */
 }
 
 //Paso 5: Crear una Función para Marcar Tareas como Completadas
@@ -129,7 +122,6 @@ function agregarTarea() {
 
 function marcarTareaComoCompletada(id_f) {
   let tarea = listaDeTareas.find((value) => value.id === id_f); //Buscamos la tarea con la función find(myfunction) y myfunction(value, index, array){return...} tal y como se explica en https://www.w3schools.com/js/js_array_search.asp#mark_find
-  console.log(tarea);
   tarea.completada = true; //Cambiamos el valor a true
   mostrarTareas(); //Para refrescar nuestra lista con tarea Completada
 }
@@ -141,7 +133,6 @@ function marcarTareaComoCompletada(id_f) {
 
 function eliminarTarea(id_f) {
   let tarea = listaDeTareas.findIndex((tarea) => tarea.id === id_f); //Buscamos el índice de la tarea con la función findIndex(myfunction) y myfunction(value, index, array){return...} tal y como se explica en https://www.w3schools.com/jsref/jsref_findindex.asp
-  console.log(tarea);
   if(confirm("¿Confirmas que deseas eliminar la Tarea " + id_f + "?")) { //Paso 10. Confirmación de eliminación:Agregar una confirmación antes de eliminar una tarea. Esto evitará la eliminación accidental de tareas importantes
     listaDeTareas.splice(tarea, 1) //Borramos indicando el índice y cúantas tareas borrar (en este caso 1).
     for(let i = tarea; i < listaDeTareas.length; i++ ) {
