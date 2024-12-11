@@ -1,5 +1,5 @@
 # Introducción
-Estos son algunos de los ejercicios que he ido realizando desde cero de las asignaturas de programación de segundo año, por lo que la solución no se parecerá a la que proporcione el profesor. Están ordenados por asignatura y cada ejercicio tiene una explicación propia, incluyendo un apartado donde se muestra el resultado en vídeo, realizado al final de cada readme.
+Estos son algunos de los ejercicios que he ido realizando desde cero de las asignaturas de programación de segundo año, por lo que la solución no se parecerá a la que proporcione el profesor. Están ordenados por asignatura y cada ejercicio tiene una explicación propia, incluyendo un apartado donde se muestra el resultado, realizado al final de cada explicación.
 
 > [!NOTE]
 > La dificultad va aumentando gradualmente. Abajo se pueden encontrar enlaces directos a cada uno de los ejercicios.
