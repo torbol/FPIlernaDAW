@@ -9,6 +9,7 @@ Estos son algunos de los ejercicios que he ido realizando desde cero de las asig
 1. [Modificar tamaño de letra con botones](DWEC%20-%20Desarrollo%20web%20Entorno%20Cliente/videotutoria3/ejemplo3)
 2. [Dar funcionalidad a botones y crear función que identifique números pares](DWEC%20-%20Desarrollo%20web%20Entorno%20Cliente/videotutoria4/ejemplo3)
 3. [Creación de una lista de tareas en JavaScript y uso de Regex](DWEC%20-%20Desarrollo%20web%20Entorno%20Cliente/videotutoria6)
+4. [PAC de Desarrollo - Piedra, papel o tijeras. POO y RegExp](DWEC%20-%20Desarrollo%20web%20Entorno%20Cliente/pacDesarrollo)
 
 ## Ejercicios DWES - Desarrollo web entorno servidor (Lenguaje PHP)
 
