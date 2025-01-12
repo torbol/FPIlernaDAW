@@ -10,7 +10,7 @@ function imageUpdater() {
         dataType: "html"
         });
 
-        //Si la petición tiene éxito, se actualiza la imagen en la página según número aleatorio recibido del servidor
+        /*Si la petición tiene éxito, se actualiza la imagen en la página según número aleatorio recibido del servidor*/
         request.done(function( msg ) {
         $("img").attr("src", "./img/" + msg + ".png");
         });
