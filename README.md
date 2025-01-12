@@ -10,6 +10,8 @@ Estos son algunos de los ejercicios que he ido realizando desde cero de las asig
 2. [Dar funcionalidad a botones y crear función que identifique números pares](DWEC%20-%20Desarrollo%20web%20Entorno%20Cliente/videotutoria4/ejemplo3)
 3. [Creación de una lista de tareas en JavaScript y uso de Regex](DWEC%20-%20Desarrollo%20web%20Entorno%20Cliente/videotutoria6)
 4. [PAC de Desarrollo - Piedra, papel o tijeras. Uso de clases, objetos y RegExp](DWEC%20-%20Desarrollo%20web%20Entorno%20Cliente/pacDesarrollo)
+5. [AJAX - Ejercicio realizado con XMLHttpRequest (Vanilla JS)](DWEC%20-%20Desarrollo%20web%20Entorno%20Cliente/videotutoría10/XMLHttpRequest)
+6. [AJAX - Ejercicio realizado con librería jQuery](DWEC%20-%20Desarrollo%20web%20Entorno%20Cliente/videotutoría10/jQuery)
 
 ## Ejercicios DWES - Desarrollo web entorno servidor (Lenguaje PHP)
 
