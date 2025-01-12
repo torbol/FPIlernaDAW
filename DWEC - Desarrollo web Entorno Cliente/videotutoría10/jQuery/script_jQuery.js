@@ -3,7 +3,7 @@ $("button").click(imageUpdater);
 
 //Actualiza la imagen en la página según número aleatorio recibido del servidor
 function imageUpdater() {
-    /*Hacemos una petición get al servidor para que nos devuelva un valor aleatorio randomValue*/
+    /*Hacemos una petición get al servidor para que nos devuelva un valor aleatorio entre 1 y 5*/
     var request = $.ajax({
         url: "aleatorio.php",
         method: "GET",
