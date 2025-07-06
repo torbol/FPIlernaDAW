@@ -23,6 +23,6 @@ Estos son algunos de los ejercicios que he ido realizando desde cero de las asig
 6. [Creación y uso de cookies](DWES%20-%20Desarrollo%20Web%20Entorno%20Servidor/videotutoria4/ejercicio5b/)
 7. [Ejercicio MVC (Modelo - Vista - Controlador)](DWES%20-%20Desarrollo%20Web%20Entorno%20Servidor/videotutoria5/Ejercicio%20propuesta%20en%20Vivo%20-%20MVC)
 
-## TFG - Trabajo Final de Grado Superior (Laravel, PHP, JavaScript, HTML5, CSS3, MySQL)
+## TFG - Trabajo Final de Grado Superior (Laravel, PHP, API RESTful, JavaScript, AJAX, HTML5, CSS3, MySQL)
 
 * [Centro de comunicación para empresas - Laravel](TFG%20-%20Trabajo%20de%20Fin%20de%20Grado%20Superior/)
