@@ -70,7 +70,7 @@ php artisan migrate:refresh --force; php artisan db:seed --class=UsersTableSeede
 ```
 
 ## Resultado ejercicio:
-Realizamos una instalación sencilla desde cero y ejecutamos los principales casos de pruebas de la plataforma:
+Realizamos una instalación sencilla desde cero y ejecutamos los principales casos de prueba dentro de la plataforma:
 1. Iniciar sesión y verificar credenciales.
 2. Enviar y recibir mensajes públicos y privados.
 3. Publicar/eliminar/comentar un post.
